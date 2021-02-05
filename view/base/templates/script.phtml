@@ -3,6 +3,6 @@ declare(strict_types=1);
 
 use Magento\Framework\View\Element\Template;
 
-/** @var $block Template */
+/** @var $block \Smile\React\Block\Script */
 ?>
-<script src="<?= '/js/react.bundle.js' ?>"></script>
+<script src="<?= $block->getScriptUrl() ?>"></script>

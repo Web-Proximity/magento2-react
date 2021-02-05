@@ -17,7 +17,7 @@ if (magentoTheme && fs.existsSync(magentoRoot + '/app/design/frontend/' + magent
 
 reactPaths.push(path.resolve(__dirname, 'node_modules'));
 
-const outputFolder = path.resolve(magentoRoot + '/pub');
+const outputFolder = path.resolve(magentoRoot + '/pub/static');
 const generatedReactFile = path.resolve(magentoRoot + '/var/tmp/react.js');
 let generatedReact = `
 import React from 'react';
