@@ -9,7 +9,7 @@ if (!fs.existsSync(magentoRoot + '/app/etc/config.php')) {
     process.exit();
 }
 
-let reactPaths = glob.sync(magentoRoot + '/vendor/*/*/view/frontend/react_source', {});
+let reactPaths = glob.sync(magentoRoot + '/vendor/*/*/**/view/frontend/react_source', {});
 reactPaths = reactPaths.concat(glob.sync(magentoRoot + '/app/code/*/*/view/frontend/react_source', {}));
 if (magentoTheme && fs.existsSync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source')) {
     reactPaths = reactPaths.concat(glob.sync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source', {}));
@@ -24,7 +24,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 `;
 
-let reactImportFiles = glob.sync(magentoRoot + '/vendor/*/*/view/frontend/react_source/_imports.js');
+let reactImportFiles = glob.sync(magentoRoot + '/vendor/*/*/**/view/frontend/react_source/_imports.js');
 reactImportFiles = reactImportFiles.concat(glob.sync(magentoRoot + '/app/code/*/*/view/frontend/react_source/_imports.js', {}));
 if (magentoTheme && fs.existsSync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source/_imports.js')) {
     reactImportFiles = reactImportFiles.concat(glob.sync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source/_imports.js', {}));
@@ -34,7 +34,7 @@ reactImportFiles.forEach(reactImportFile => {
     generatedReact += '\n// File ' + reactImportFile + '\n' + fs.readFileSync(reactImportFile);
 });
 
-let reactConfigurationFiles = glob.sync(magentoRoot + '/vendor/*/*/view/frontend/react_source/_component.js');
+let reactConfigurationFiles = glob.sync(magentoRoot + '/vendor/*/*/**/view/frontend/react_source/_component.js');
 reactConfigurationFiles = reactConfigurationFiles.concat(glob.sync(magentoRoot + '/app/code/*/*/view/frontend/react_source/_component.js', {}));
 if (magentoTheme && fs.existsSync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source/_component.js')) {
     reactConfigurationFiles = reactConfigurationFiles.concat(glob.sync(magentoRoot + '/app/design/frontend/' + magentoTheme + '/react_source/_component.js', {}));
