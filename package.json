@@ -1,40 +1,46 @@
 {
-    "name" : "magento2-react",
-    "version" : "1.0.0",
-    "main" : "index.js",
-    "scripts" : {
-        "dev" : "webpack --mode development",
-        "build" : "webpack --mode production"
-    },
-    "keywords" : [],
-    "contributors" : [
-        "Jisse Reitsma",
-        "Romain Ruaud <romain.ruaud@smile.fr>"
-    ],
-    "license" : "ISC",
-    "description" : "",
-    "dependencies" : {
-        "@babel/core" : "^7.7.4",
-        "@babel/preset-env" : "^7.7.4",
-        "@babel/preset-react" : "^7.7.4",
-        "@magento/babel-preset-peregrine" : "~1.0.1-rc.1",
-        "@magento/peregrine" : "~5.0.0-rc.1",
-        "babel-loader" : "^8.0.6",
-        "babel-plugin-graphql-tag" : "^2.5.0",
-        "eslint" : "^6.7.1",
-        "fs" : "^0.0.1-security",
-        "glob" : "^7.1.6",
-        "graphql" : "^14.6.0",
-        "graphql-tag" : "^2.10.1",
-        "path" : "^0.12.7",
-        "react" : "^16.12.0",
-        "react-dom" : "^16.12.0",
-        "react-hot-loader" : "^4.12.19",
-        "webpack" : "^5.0.0-beta.7",
-        "webpack-cli" : "^3.3.10"
-    },
-    "devDependencies" : {
-        "@babel/plugin-proposal-class-properties" : "^7.7.4",
-        "@babel/plugin-syntax-dynamic-import" : "^7.7.4"
-    }
+  "name": "magento2-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "contributors": [
+    "Jisse Reitsma",
+    "Romain Ruaud <romain.ruaud@smile.fr>",
+    "Michele Bertuccioli <michele@webproximity.it>"
+  ],
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@magento/babel-preset-peregrine": "~1.0.1-rc.1",
+    "@magento/peregrine": "~5.0.0-rc.1",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-graphql-tag": "^2.5.0",
+    "eslint": "^6.7.1",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.6",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.1",
+    "path": "^0.12.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19",
+    "typescript": "^4.6.2",
+    "webpack": "^5.0.0-beta.7",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4"
+  }
 }
